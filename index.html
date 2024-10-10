@@ -3,45 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>triki</title>
-    <link rel="stylesheet" href="./stylr.css">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="celular.css" media="(max-width: 550px)">
 </head>
-<body>
-    <form action="" class="f">
-            <div class="contenedor">
-                <div class="cuadro">
-                    <input class="xo" type="text">
-                </div>
-                <div class="cuadro">
-                    <input class="xo"  type="text">
-                </div>
-                <div class="cuadro">
-                    <input  class="xo" type="text">
-                </div>
-                <div class="cuadro">
-                    <input  class="xo" type="text">
-                </div>
-                <div class="cuadro">
-                    <input  class="xo" type="text">
-                </div>
-                <div class="cuadro">
-                    <input  class="xo" type="text">
-                </div>
-                <div class="cuadro">
-                    <input  class="xo" type="text">
-                </div>
-                <div class="cuadro">
-                    <input  class="xo" type="text">
-                </div>
-                <div class="cuadro">
-                    <input  class="xo" type="text">
-                </div>
+<body id="body">
+    <body>
+        <div class="calculadora" id="bordeCalcu">
+            <div class="operacion" id="bordeOper">
+                <input type="text" id="num1">
+                <p id="simbolo"></p>
+                <input type="text" id="num2">
+                <p id="resultado"></p>
             </div>
-            <div class="rest-con">
-                 <input type="reset" class="reset">
+            <div class="botones">
+                <button class="oper" onclick="borrar(1)">C</button>
+                <button class="oper" onclick="borrar(2)">←</button>
+                <button class="oper" onclick="operation(5)">π</button>
+                <button class="oper" onclick="operation(3)">÷</button>
+                <button class="numer" onclick="number(1)">1</button>
+                <button class="numer" onclick="number(2)">2</button>
+                <button class="numer" onclick="number(3)">3</button>
+                <button class="oper" onclick="operation(4)">x</button>
+                <button class="numer" onclick="number(4)">4</button>
+                <button class="numer" onclick="number(5)">5</button>
+                <button class="numer" onclick="number(6)">6</button>
+                <button class="oper" onclick="operation(2)">-</button>
+                <button class="numer" onclick="number(7)">7</button>
+                <button class="numer" onclick="number(8)">8</button>
+                <button class="numer" onclick="number(9)">9</button>
+                <button class="oper" onclick="operation(1)">+</button>
+                <button class="oper" onclick="cambioColor()">cl</button>
+                <button class="boton" onclick="number(0)">0</button>
+                <button class="boton" onclick="number(10)">.</button>
+                <button class="resul" onclick="resultad()">=</button>
             </div>
-                   
-    </form>
-    
+        </div>
+       
+        <script src="main.js"></script>
+        
 </body>
 </html>

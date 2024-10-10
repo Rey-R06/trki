@@ -1,0 +1,11 @@
+.calculadora{
+    height: 400px;
+}
+
+.botones button{
+    width: 45px;
+}
+
+.botones{
+    margin-left:40px;
+}
